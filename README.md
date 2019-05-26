@@ -5,7 +5,7 @@ MapBox: 0.53.1
 NgxMapboxGl: 3.1.0
 Yandex-Predictions: Search limited to TR_tr ('Turkey').
 
-This project is a prove of test using the about dependecies and technologies.
+This is a proof of concept
 
 ## TODO
 
