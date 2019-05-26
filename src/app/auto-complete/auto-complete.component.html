@@ -1,0 +1,27 @@
+<div class="auto-complete-wrapper">
+    <form class="form-autocomplete" (ngSubmit)="ngSubmitForm()" novalidate>
+        <input class="input-autocomplete" type="text" name="addressInput" [(ngModel)]="addressInput" placeholder="Type address" autocomplete="off" (keyup)="keyUpHandler()">
+    </form>
+    <section class="panel-autocomplete" *ngIf="predictions">
+        <ul class="panel-predictions">
+            <li class="predictions-item" *ngFor="let prediction of predictions">
+                <a href="javascript:void(0)" (click)="suggestedSelected(prediction)">
+							{{prediction.name}}, {{prediction.description}}
+						</a>
+            </li>
+        </ul>
+    </section>
+    <section class="panel-result" *ngIf="selectedAddress">
+        <p class="selected-address">{{selectedAddress.name}}</p>
+        <ul class="location">
+            <li><span>Lat:</span> {{selectedAddress.lat}}</li>
+            <li><span>Lng:</span> {{selectedAddress.lng}}</li>
+        </ul>
+    </section>
+    <div class="alert alert-success" *ngIf="errorMessage">
+        <p>{{errorMessage}}</p>
+    </div>
+    <div class="alert alert-success" *ngIf="showNoData">
+        <p>{{showNoData}}</p>
+    </div>
+</div>
