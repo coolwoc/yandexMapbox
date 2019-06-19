@@ -65,6 +65,7 @@ export class AutoCompleteGeoService {
 					geoObjTemp[i]['kind'] = tempKind;
 					geoObjTemp[i]['level'] = tempLevel;
 				}
+        this.geoSubject = geoObj;
 				return geoObj;
 			})
 		)
