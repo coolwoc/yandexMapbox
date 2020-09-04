@@ -26,7 +26,7 @@
     "core-js": "^2.5.4",
     "mapbox-gl": "^0.53.1",
     "ngx-mapbox-gl": "^3.1.0",
-    "node-sass": "^4.10.0",
+    "node-sass": "^4.13.1",
     "rxjs": "~6.3.3",
     "turf-extent": "^1.0.4",
     "zone.js": "~0.8.26"
